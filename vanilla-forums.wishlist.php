@@ -31,6 +31,7 @@ if (!function_exists('vf_get_user_wishlist')) {
    function vf_get_user_wishlist($user) {
       $levels = WLMAPI::wlmapi_get_member_levels($current_user->ID);
 
+      $levels = get_object_vars($levels[0]);
       if (is_array($levels)) {
          $roles = array();
          if (isset($user['roles']))
