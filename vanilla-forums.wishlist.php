@@ -42,7 +42,7 @@ if (!function_exists('vf_get_user_wishlist')) {
          if (isset($user['roles']))
             $roles = explode(',', $user['roles']);
 
-         $roles = array_merge($roles, array_values($wishlistRoles));
+         $roles = array_merge($roles, $wishlistRoles);
          $roles = array_unique($roles);
          $user['roles'] = implode(',', $roles);      
       }
