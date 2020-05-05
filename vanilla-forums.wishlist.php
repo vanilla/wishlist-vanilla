@@ -1,4 +1,13 @@
 <?php
+/*
+Plugin Name: Vanilla Forums Wishlist
+Plugin URI: https://vanillaforums.com
+Description: Integrates Wishlist with Vanilla Forums SSO on WordPress.
+Version: 1.2.2
+Author: Vanilla Forums
+Author URI: https://vanillaforums.com
+*/
+
 /**
  * This extension will add Wishlist level information to Vanilla Formum's SSO.
  * 
@@ -11,15 +20,6 @@
  * @license Proprietary
  */
 
-$WLMExtension = array (
-   'Name' => 'Vanilla Forums Wishlist Extension',
-   'URL' => 'http://vanillaforums.com',
-   'Version' => '1.0',
-   'Description' => "This extension will add Wishlist level information to Vanilla Formum's SSO",
-   'Author' => 'Todd Burry',
-   'AuthorURL' => 'http://vanillaforums.com/',
-   'File' => __FILE__
-);
 
 if (!function_exists('vf_get_user_wishlist')) {
    /**
